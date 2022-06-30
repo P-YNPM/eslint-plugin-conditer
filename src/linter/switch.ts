@@ -9,6 +9,7 @@ import {
 
 const hasNestedBreakOrReturnStatement = (statement: Statement): boolean => {
     const body: ReadonlyArray<Statement> =
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         statement.body;
     if (!body) {
